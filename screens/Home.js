@@ -1,23 +1,14 @@
 import React from 'react'
 import { StyleSheet, View, Text, SafeAreaView } from 'react-native'
 import { useFont } from 'expo-font'
+import { globalStyles } from '../styles/global'
 
 export default function Home() {
     return (
         <SafeAreaView>
-            <View style={styles.container}>
-                <Text style={styles.textStyle}>Home Screen</Text>
+            <View style={globalStyles.container}>
+                <Text style={globalStyles.titleText}>Home Screen</Text>
             </View>
         </SafeAreaView>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        padding: 24
-    },
-    textStyle: {
-        fontFamily: 'nunito-bold',
-        fontSize: 18
-    }
-})
